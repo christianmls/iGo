@@ -23,3 +23,4 @@ const NB_MODULES = [
   ]
 })
 export class TemplateModule { }
+© 2020 GitHub, Inc.
