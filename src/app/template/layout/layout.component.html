@@ -1,0 +1,25 @@
+<nb-layout [nbSpinner]="true" nbSpinnerStatus="danger">
+  <nb-layout-header>
+    <div class="cmaginet-header">
+      <div class="cmaginet-header-left">
+        <nb-icon icon="menu-2-outline" status="basic" [options]="{ animation: { type: 'pulse' } }" (click)="toggle()"></nb-icon> <h1>iGo</h1>
+      </div>
+      <div class="cmaginet-header-middle">
+        Middle
+      </div>
+      <div class="cmaginet-header-right">
+        Right
+      </div>
+    </div>
+  </nb-layout-header>
+
+  <nb-layout-footer>Footer</nb-layout-footer>
+
+  <nb-sidebar>
+    <nb-menu [items]="items"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <ng-content></ng-content>
+  </nb-layout-column>
+</nb-layout>

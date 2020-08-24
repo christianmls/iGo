@@ -1,10 +1,64 @@
-<nb-layout>
-    <nb-layout-header fixed>Company Name</nb-layout-header>
-  
-    <nb-sidebar>Sidebar Content</nb-sidebar>
-  
-    <nb-layout-column>
-      <router-outlet></router-outlet>
-    </nb-layout-column>
-  </nb-layout>
-  
+<cmaginet-layout>
+  <nb-card>
+    <nb-card-header>Clientes</nb-card-header>
+
+    <nb-card-body>
+      <table datatable [dtOptions]="dtOptions" class="smart-table">
+        <thead>
+          <tr>
+            <th scope="col">Naturaleza</th>
+            <th scope="col">Razón Social</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Jurídica</td>
+            <td>Empresa Cia. Ltda.</td>
+            <td>empresa@empresa.com</td>
+            <td>
+              <nb-icon icon="eye-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="edit-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="trash-2-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Jurídica</td>
+            <td>Empresa Cia. Ltda.</td>
+            <td>empresa@empresa.com</td>
+            <td>
+              <nb-icon icon="eye-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="edit-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="trash-2-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Jurídica</td>
+            <td>Empresa Cia. Ltda.</td>
+            <td>empresa@empresa.com</td>
+            <td>
+              <nb-icon icon="eye-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="edit-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="trash-2-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Jurídica</td>
+            <td>Empresa Cia. Ltda.</td>
+            <td>empresa@empresa.com</td>
+            <td>
+              <nb-icon icon="eye-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="edit-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+              <nb-icon icon="trash-2-outline" status="basic" [options]="{ animation: { type: 'pulse' } }"></nb-icon>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </nb-card-body>
+  </nb-card>
+</cmaginet-layout>

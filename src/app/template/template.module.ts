@@ -1,26 +1,41 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NbSidebarModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbIconModule, NbSpinnerModule, NbMenuModule, NbCardModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { LayoutComponent } from './layout/layout.component';
 
 const NB_MODULES = [
   NbLayoutModule,
   NbEvaIconsModule,
+  NbIconModule,
+  NbMenuModule.forRoot(),
   NbSidebarModule.forRoot(),
-  NbEvaIconsModule,
-  NbButtonModule
+  NbButtonModule,
+  NbSpinnerModule,
+  NbCardModule
 ]
+
+const COMPONENTS = [
+  HeaderComponent,
+  FooterComponent,
+  SidebarComponent,
+  LayoutComponent
+]
+
 @NgModule({
-  declarations: [],
+  declarations: [...COMPONENTS],
   imports: [
     CommonModule,
-    NB_MODULES
+    ...NB_MODULES
   ],
   exports: [
-    NB_MODULES
+    NB_MODULES,
+    LayoutComponent
   ]
 })
 export class TemplateModule { }
-© 2020 GitHub, Inc.
