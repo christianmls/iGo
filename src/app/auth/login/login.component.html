@@ -2,7 +2,7 @@
 <p class="sub-title">¡Hola! Inicie sesión con su correo electrónico.</p>
 
 <nb-alert *ngIf="showMessages.error && errors?.length && !submitted" outline="danger" role="alert">
-  <p class="alert-title"><b>Oh snap!</b></p>
+  <p class="alert-title"><b>¡Error!</b></p>
   <ul class="alert-message-list">
     <li *ngFor="let error of errors" class="alert-message">{{ error }}</li>
   </ul>

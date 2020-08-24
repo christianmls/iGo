@@ -34,13 +34,15 @@ import { HttpClientModule } from '@angular/common/http';
           baseEndpoint: environment.api,
             login: {
               method: 'post',
-              endpoint: '/token',
+              endpoint: '/auth/sign-in',
               alwaysFail: false,
               requireValidToken: true,
               redirect: {
                 success: '/home',
                 failure: null, // stay on the same page
               },
+              defaultErrors: ['La combinación de usuario/contraseña no es correcta, inténtelo de nuevo.'],
+              defaultMessages: ['Has ingresado con éxito.'],
             }
         }),
       ],
