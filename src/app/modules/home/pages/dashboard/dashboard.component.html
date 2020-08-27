@@ -1,9 +1,9 @@
 <cmaginet-layout>
-  <nb-card>
+  <!-- <nb-card>
     <nb-card-header>Clientes</nb-card-header>
 
     <nb-card-body>
-      <table datatable [dtOptions]="dtOptions" class="smart-table">
+      <table datatable class="smart-table row-border hover">
         <thead>
           <tr>
             <th scope="col">Naturaleza</th>
@@ -60,5 +60,53 @@
         </tbody>
       </table>
     </nb-card-body>
+  </nb-card> -->
+
+  <nb-card class="form">
+    <nb-card-header>Empresa</nb-card-header>
+    <nb-card-body>
+      <form class="form-body form-body-4">
+        <div class="form-group">
+          <label id="type">Tipo</label>
+          <input type="text" nbInput fullWidth placeholder="Tipo">
+        </div>
+
+        <div class="form-group">
+          <label id="type">Tipo</label>
+          <input type="text" nbInput fullWidth placeholder="Tipo">
+        </div>
+
+        <div class="form-group">
+          <label id="type">Tipo</label>
+          <input type="text" nbInput fullWidth placeholder="Tipo">
+        </div>
+
+        <div class="form-group">
+          <label id="type">Tipo</label>
+          <input type="text" nbInput fullWidth placeholder="Tipo">
+        </div>
+
+        <div class="form-group group-4">
+          <label id="type">Tipo</label>
+          <input type="text" nbInput fullWidth placeholder="Tipo">
+        </div>
+
+        <div class="form-group group-2">
+          <label id="type">Tipo</label>
+          <input type="text" nbInput fullWidth placeholder="Tipo">
+        </div>
+
+        <div class="form-group group-2">
+          <label id="type">Tipo</label>
+          <input type="text" nbInput fullWidth placeholder="Tipo">
+        </div>
+      </form>
+    </nb-card-body>
+    <nb-card-footer>
+      <div class="form-button">
+        <button nbButton status="basic" class="form-button-cancel">Cancelar</button>
+        <button nbButton status="primary" class="form-button-save">Guardar</button>
+      </div>
+    </nb-card-footer>
   </nb-card>
 </cmaginet-layout>

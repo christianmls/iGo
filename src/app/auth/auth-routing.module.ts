@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NbAuthComponent } from '@nebular/auth';
+import { NbAuthComponent, NbLogoutComponent } from '@nebular/auth';
 
 import { LoginComponent } from './login/login.component';
 
@@ -14,6 +14,10 @@ const routes: Routes = [
         path: 'login',
         component: LoginComponent,
       },
+      {
+        path: 'logout',
+        component: NbLogoutComponent,
+      }
     ],
   },
 ];

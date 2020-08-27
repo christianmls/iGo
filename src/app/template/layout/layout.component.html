@@ -1,16 +1,6 @@
 <nb-layout [nbSpinner]="true" nbSpinnerStatus="danger">
   <nb-layout-header>
-    <div class="cmaginet-header">
-      <div class="cmaginet-header-left">
-        <nb-icon icon="menu-2-outline" status="basic" [options]="{ animation: { type: 'pulse' } }" (click)="toggle()"></nb-icon> <h1>iGo</h1>
-      </div>
-      <div class="cmaginet-header-middle">
-        Middle
-      </div>
-      <div class="cmaginet-header-right">
-        Right
-      </div>
-    </div>
+    <cmaginet-header></cmaginet-header>
   </nb-layout-header>
 
   <nb-layout-footer>Footer</nb-layout-footer>

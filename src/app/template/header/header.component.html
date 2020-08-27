@@ -1,1 +1,11 @@
-<p>header works!</p>
+<div class="cmaginet-header">
+  <div class="cmaginet-header-left">
+    <nb-icon icon="menu-2-outline" status="basic" [options]="{ animation: { type: 'pulse' } }" (click)="toggle()"></nb-icon> <h1>iGo</h1>
+  </div>
+  <div class="cmaginet-header-middle">
+    Middle
+  </div>
+  <div class="cmaginet-header-right">
+    <nb-user [name]="user?.user.name" [title]="user?.user.roles[0].name" [picture]="user?.picture" [nbContextMenu]="context"></nb-user>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbIconModule, NbSpinnerModule, NbMenuModule, NbCardModule } from '@nebular/theme';
+import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbIconModule, NbSpinnerModule, NbMenuModule, NbCardModule, NbInputModule, NbUserModule, NbContextMenuModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 import { HeaderComponent } from './header/header.component';
@@ -17,7 +17,10 @@ const NB_MODULES = [
   NbSidebarModule.forRoot(),
   NbButtonModule,
   NbSpinnerModule,
-  NbCardModule
+  NbCardModule,
+  NbInputModule,
+  NbUserModule,
+  NbContextMenuModule
 ]
 
 const COMPONENTS = [
