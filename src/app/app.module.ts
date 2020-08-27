@@ -10,7 +10,7 @@ import { DataTablesModule } from 'angular-datatables';
 import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './core/app.component';
-import { AuthInterceptor } from './interceptor/auth.interceptor';
+import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { AuthGuardService } from './services/auth-guard.service';
 
 import { TemplateModule } from './template/template.module';

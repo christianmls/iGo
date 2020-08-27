@@ -1,1 +1,26 @@
-<p>starter-wizard works!</p>
+<nb-layout>
+  <nb-layout-column>
+    <nb-card class="card-full">
+      <nb-card-header>Configuración inicial de iGo</nb-card-header>
+
+      <nb-card-body>
+        <nb-stepper orientation="horizontal">
+          <nb-step [label]="labelOne">
+            <ng-template #labelOne>First step</ng-template>
+            1
+          </nb-step>
+
+          <nb-step [label]="labelTwo">
+            <ng-template #labelTwo>Two step</ng-template>
+            2
+          </nb-step>
+
+          <nb-step [label]="labelThree">
+            <ng-template #labelThree>Three step</ng-template>
+            3
+          </nb-step>
+        </nb-stepper>
+      </nb-card-body>
+    </nb-card>
+  </nb-layout-column>
+</nb-layout>
