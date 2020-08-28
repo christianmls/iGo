@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NbMenuItem } from '@nebular/theme';
+import { NbAuthService } from '@nebular/auth';
 
 @Component({
   selector: 'cmaginet-layout',
@@ -8,26 +9,17 @@ import { NbMenuItem } from '@nebular/theme';
   styleUrls: ['./layout.component.scss']
 })
 export class LayoutComponent implements OnInit {
-  items: NbMenuItem[] = [
-    {
-      title: 'Profile',
-      icon: 'person-outline',
-    },
-    {
-      title: 'Change Password',
-      icon: 'lock-outline',
-    },
-    {
-      title: 'Privacy Policy',
-      icon: { icon: 'checkmark-outline', pack: 'eva' },
-    },
-    {
-      title: 'Logout',
-      icon: 'unlock-outline',
-    },
-  ];
+  items: NbMenuItem[] = [];
 
-  constructor() { }
+  constructor(
+    private authService: NbAuthService
+  ) {
+    this.authService.onTokenChange().subscribe((token)=>{
+      if (token.isValid()) {
+        this.items = token.getPayload().user.menuOptions;
+      }
+    });
+   }
 
   ngOnInit(): void {
   }

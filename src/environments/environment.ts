@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'https://igo-backend.herokuapp.com/api'
+  api: 'http://jose:3001/api'
 };
 
 /*
